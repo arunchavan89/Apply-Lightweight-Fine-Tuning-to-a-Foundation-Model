@@ -10,3 +10,12 @@ In this project, all of the essential components of a PyTorch + Hugging Face tra
 * Load a pre-trained model and evaluate its performance
 * Perform parameter-efficient fine tuning using the pre-trained model
 * Perform inference using the fine-tuned model and compare its performance to the original model
+
+# Key Concepts
+Hugging Face PEFT allows you to fine-tune a model without having to fine-tune all of its parameters.
+
+Training a model using Hugging Face PEFT requires two additional steps beyond traditional fine-tuning:
+* Creating a PEFT config
+* Converting the model into a PEFT model using the PEFT config
+
+Inference using a PEFT model is almost identical to inference using a non-PEFT model. The only difference is that it must be loaded as a PEFT model.
